@@ -3,7 +3,6 @@
  * Copyright 2019 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import { helpi } from './helpi.js';
 import {LitElement, html, css} from 'lit';
 
 /**
@@ -44,7 +43,7 @@ export class MyElement extends LitElement {
   constructor() {
     super();
     this.name = 'World';
-    this.count = helpi();
+    this.count = 0;
   }
 
   render() {
